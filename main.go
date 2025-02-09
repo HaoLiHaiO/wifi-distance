@@ -13,7 +13,6 @@ import (
 func getSignalStrength() (int, error) {
 	var cmd *exec.Cmd
 
-	// Detect OS and log output
 	osType := detectOS()
 	fmt.Println("Detected OS:", osType)
 
